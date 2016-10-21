@@ -83,7 +83,7 @@ public class ControllerSistema {
 		return senha;
 	}
 	
-	@Scheduled(cron="0 15 19 * * *")
+	@Scheduled(cron="0 0 6 * * *")
 	public void email(){
 		LocalDate hoje = LocalDate.now();
 		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy");
